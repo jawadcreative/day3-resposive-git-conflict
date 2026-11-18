@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Git + responsive CSS components ·</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body">
+    <main class="h-full w-full relative">
+        <!-- Navabar -->
+        <div class="fixed bg-white top-0 left-0 z-10 w-full flex flex-col overflow-hidden">
+            <header class="w-full h-12 px-6 flex justify-between items-center border-b border-gray-200">
+                <a href="/" class="flex gap-2 items-center">
+                    <img class="h-6 w-6" src="remix-line.svg" alt="" />
+                    <p class="font-bold">Git + Responsive</p>
+                </a>
+                <nav class="max-md:hidden">
+                    <ul class="flex gap-4 items-center">
+                        <li class="hover:text-gray-600"><a href="/">Home</a></li>
+                        <li class="hover:text-gray-600"><a href="about.html">About</a></li>
+                        <li class="hover:text-gray-600"><a href="services.html">Services</a></li>
+                        <li class="hover:text-gray-600"><a href="services.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <span class="hamburger cursor-pointer px-2 py-1 bg-gray-200 md:hidden text-xl"><i
+                        class="ri-menu-4-line"></i></span>
+            </header>
+            <div class="mobile-nav duration-300 ease-in h-0 md:hidden overflow-hidden bg-[#5a5a5a44] backdrop-blur-sm">
+                <nav class="h-screen flex items-center justify-center">
+                    <ul class="flex flex-col gap-6">
+                        <li class="text-3xl hover:text-gray-600"><a href="/">Home</a></li>
+                        <li class="text-3xl hover:text-gray-600"><a href="/">About</a></li>
+                        <li class="text-3xl hover:text-gray-600"><a href="/">Services</a></li>
+                        <li class="text-3xl hover:text-gray-600"><a href="/">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <section class="bg-gray-50 px-6 py-24 sm:py-32 bg-[url('hero.avif')] bg-cover bg-center h-screen w-full">
+            <div class="mx-auto max-w-3xl text-center">
+                <h1
+                    class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl text-red-100">
+                    Stories, ideas, and lessons from the code
+                </h1>
+                <p class="mt-6 text-lg leading-8 text-gray-200">
+                    Practical writing on web development, building products, and learning in public. New posts every
+                    week.
+                </p>
+                <div class="mt-10">
+                    <a href="#posts"
+                        class="inline-block rounded-lg bg-indigo-600 px-6 py-3 text-base font-semibold text-white shadow-sm transition hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2">
+                        Read the latest posts
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blogs -->
+        <section
+            class="blog-con h-[400vh] sm:h-[200vh] md:h-screen w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-12 gap-6 max-sm:grid-rows-6 grid-rows-6 sm:grid-rows-4 md:grid-rows-2">
+
+        </section>
+
+        <!-- Pricing Card -->
+        <section class="w-full flex flex-col justify-center gap-6 items-center p-6 md:p-12 bg-[#F4F4F4]">
+            <div class="text-center">
+                <h1 class="text-3xl sm:text-5xl font-bold">Pricing Plan</h1>
+                <p>Choose the right plan for your needs.</p>
+            </div>
+            <div
+                class="w-full flex flex-col lg:flex-row justify-center items-center lg:items-stretch lg:px-12 lg:gap-8 gap-6 px-3">
+                <!-- Card 1 -->
+                <div
+                    class="rounded-4xl w-full max-w-md lg:max-w-none lg:w-[30%] border border-gray-300 overflow-hidden shadow-lg shadow-gray-300 flex flex-col">
+                    <div class="shadow-lg shadow-gray-300 rounded-4xl p-3 flex flex-col gap-4">
+                        <div class="h-40 w-full bg-gray-300 rounded-2xl p-2 flex flex-col items-start justify-between">
+                            <p class="px-4 py-2 bg-white rounded-full text-xs uppercase">Starter</p>
+                            <p class="leading-none"><span class="text-3xl font-bold">$0</span> /month</p>
+                        </div>
+                        <p>Perfect for small teams</p>
+                        <button class="bg-black text-white py-4 rounded-full cursor-pointer">Start Hiring</button>
+                    </div>
+                    <div class="flex-grow flex flex-col items-start justify-center gap-2 px-4 py-6">
+                        <p><span><i class="ri-check-line"></i></span> 3 Projects</p>
+                        <p><span><i class="ri-check-line"></i></span> AI Application Screening</p>
+                        <p><span><i class="ri-check-line"></i></span> AI Recrutier</p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div
+                    class="rounded-4xl w-full max-w-md lg:max-w-none lg:w-[30%] border border-gray-300 overflow-hidden shadow-lg shadow-gray-300 flex flex-col">
+                    <div class="shadow-lg shadow-gray-300 rounded-4xl p-3 flex flex-col gap-4">
+                        <div
+                            class="h-40 w-full bg-linear-to-r from-[#D9DAEF] to-[#D2DFEF] rounded-2xl p-2 flex flex-col items-start justify-between">
+                            <p class="px-4 py-2 bg-white rounded-full text-xs uppercase">Professional</p>
+                            <p class="leading-none"><span class="text-3xl font-bold">$99</span> /month</p>
+                        </div>
+                        <p>Perfect for growing teams</p>
+                        <button class="bg-black text-white py-4 rounded-full cursor-pointer">Start Hiring</button>
+                    </div>
+                    <div class="flex-grow flex flex-col items-start justify-center gap-2 px-4 py-6">
+                        <p><span><i class="ri-check-line"></i></span> Unlimited Projects</p>
+                        <p><span><i class="ri-check-line"></i></span> AI Application Screening</p>
+                        <p><span><i class="ri-check-line"></i></span> AI Recrutier</p>
+                        <p><span><i class="ri-check-line"></i></span> Risk-Free Guarantee</p>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div
+                    class="rounded-4xl w-full max-w-md lg:max-w-none lg:w-[30%] border border-gray-300 overflow-hidden shadow-lg shadow-gray-300 flex flex-col">
+                    <div class="shadow-lg shadow-gray-300 rounded-4xl p-3 flex flex-col gap-4">
+                        <div class="h-40 w-full bg-gray-300 rounded-2xl p-2 flex flex-col items-start justify-between">
+                            <p class="px-4 py-2 bg-white rounded-full text-xs uppercase">Enterprise</p>
+                            <p class="leading-none"><span class="text-3xl font-bold">Custom</span></p>
+                        </div>
+                        <p>For Large Organizations</p>
+                        <button class="bg-black text-white py-4 rounded-full cursor-pointer">Start Hiring</button>
+                    </div>
+                    <div class="flex-grow flex flex-col items-start justify-center gap-2 px-4 py-6">
+                        <p><span><i class="ri-check-line"></i></span> Unlimited Projects</p>
+                        <p><span><i class="ri-check-line"></i></span> AI Application Screening</p>
+                        <p><span><i class="ri-check-line"></i></span> Custom Skill Assessment</p>
+                        <p><span><i class="ri-check-line"></i></span> Custom AI Recrutier</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script src="index.js"></script>
+    </body>
+
+</html>
